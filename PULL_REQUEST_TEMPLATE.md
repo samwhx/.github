@@ -31,9 +31,8 @@ tests pinning behavior, mechanical edits>
 
 ## Impact
 <!-- Blast radius = what actually breaks if this PR is wrong: which
-     consumers (fleet agents, daemon, cortex seam), which data. "None"
-     needs a reason (e.g. docs-only, no code path touched). Master is the
-     deploy source (gated deploy, ADR-0006). -->
+     consumers, which users, which data. "None" needs a reason (e.g.
+     docs-only, no code path touched). -->
 - Risk: low | medium | high
 - Blast radius:
 - User-facing: none | docs-only | behavior change — <what users see / must do>
