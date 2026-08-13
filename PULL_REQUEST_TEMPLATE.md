@@ -1,9 +1,10 @@
 ## Summary
-<!-- The goal first, then what changed — one line per bullet. Put the
+<!-- The goal first, then what changed — one bullet per idea, each a bold
+     lead-in naming the idea then the explanation behind it. Put the
      issue / ADR / plan link on the goal bullet. Name the actual behavior
-     change; do not restate the PR title. A bullet that wraps is a prose
-     paragraph in disguise; split it. -->
-- 
+     change; do not restate the PR title. A bullet that wraps past two
+     lines is a paragraph in disguise; split it. -->
+- **<the idea>** — <the explanation behind it>
 
 ## Key changes
 <!-- The section that earns the merge: show the changes worth a human's
@@ -13,18 +14,22 @@
      reviewer never got to veto, so cover them all; a big PR gets a long
      list, not a trimmed one.
 
-     Each entry: one line on what it is and how to judge it, then a
-     permalink to the exact lines ON ITS OWN LINE — GitHub renders those
-     lines as an inline code snippet, so the whole review reads
-     top-to-bottom right here, no file-hopping.
+     Each entry: a bold headline LINE, then the judgement points as
+     top-level dash bullets directly beneath it (one idea each — never a
+     paragraph; keep them top-level so they render as filled discs, not
+     nested hollow rings), then a permalink to the exact lines ON ITS OWN
+     LINE — GitHub renders those lines as an inline code snippet, so the
+     whole review reads top-to-bottom right here, no file-hopping.
 
      Permalink recipe: https://github.com/<owner>/<repo>/blob/<full-sha>/<file>#L10-L25
      — full 40-char SHA of an already-PUSHED commit; owner/repo = the origin remote.
      Or in the file view: press `y` to pin the SHA, click-drag the lines, copy the URL.
 
      An entry spanning two files stacks both permalinks under it. -->
-1. **<the change, and how to judge it>**
-   <permalink>
+**<the change, in a few words>**
+- <what decision it embeds / how to judge it>
+- <another point, if any>
+<permalink>
 
 Safe to skim: <the rest of the diff and why eyes-off is fine — docs,
 tests pinning behavior, mechanical edits>
@@ -49,8 +54,9 @@ tests pinning behavior, mechanical edits>
 - 
 
 <!-- pr-mermaid:eval -->
-<!-- When decision=diagram, put the mermaid diagram right after Summary,
-     not down here. This comment stays at the bottom.
+<!-- Keep these fields inside this comment — unwrapped, they render as
+     visible text at the top of the PR. When decision=diagram, put the
+     mermaid diagram right after Summary, not down here.
 new-pattern: no
   visualizable: n/a
   decision: skip
